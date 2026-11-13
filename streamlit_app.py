@@ -13,6 +13,7 @@ sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 try:
     import streamlit as st
+    import streamlit.components.v1 as components
 except ImportError:
     print("Streamlit is not installed in this environment.")
     print("To install: pip install streamlit")
@@ -215,6 +216,92 @@ new_body = st.text_area(
 )
 
 notes = st.text_input("Review Notes", value=lead.get("notes", ""), key=f"notes_{lead['source_id']}")
+
+# Formatted bundle text for clipboard copying
+bundle_text = f"""PROSPECT: {lead['name']} ({lead['company'] or lead['sector']})
+SECTOR: {lead['sector'].upper()}
+WEBSITE: {lead.get('website', 'N/A')}
+LINKEDIN: {lead.get('linkedin', 'N/A')}
+
+1. OPERATIONAL PAIN POINT:
+{new_pain.strip()}
+
+2. PERSONALIZATION ANGLE:
+{new_angle.strip()}
+
+3. SUBJECT:
+{new_subject.strip()}
+
+4. EMAIL BODY:
+{new_body.strip()}
+""".strip()
+
+# Interactive One-Click Copy Button via browser clipboard API
+copy_btn_html = f"""
+<div style="margin: 10px 0 16px 0;">
+  <button id="copyBtn" onclick="copyAllFields()" style="
+    width: 100%;
+    background-color: #262730;
+    color: #ffffff;
+    border: 1px solid #4e5166;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  " onmouseover="this.style.borderColor='#ff4b4b'; this.style.color='#ff4b4b';" onmouseout="this.style.borderColor='#4e5166'; this.style.color='#ffffff';">
+    <span id="copyIcon">📋</span> <span id="copyText">Copy All to Clipboard (Pain Point + Angle + Subject + Body)</span>
+  </button>
+</div>
+<script>
+function copyAllFields() {{
+  const textToCopy = {json.dumps(bundle_text)};
+  navigator.clipboard.writeText(textToCopy).then(function() {{
+    const btn = document.getElementById('copyBtn');
+    const icon = document.getElementById('copyIcon');
+    const text = document.getElementById('copyText');
+    btn.style.backgroundColor = '#21c354';
+    btn.style.borderColor = '#21c354';
+    btn.style.color = '#ffffff';
+    icon.innerText = '✅';
+    text.innerText = 'Copied All to Clipboard!';
+    setTimeout(function() {{
+      btn.style.backgroundColor = '#262730';
+      btn.style.borderColor = '#4e5166';
+      btn.style.color = '#ffffff';
+      icon.innerText = '📋';
+      text.innerText = 'Copy All to Clipboard (Pain Point + Angle + Subject + Body)';
+    }}, 2500);
+  }}).catch(function(err) {{
+    // Fallback for restricted iframe contexts
+    const ta = document.createElement('textarea');
+    ta.value = textToCopy;
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    const text = document.getElementById('copyText');
+    text.innerText = 'Copied to Clipboard!';
+    setTimeout(function() {{
+      text.innerText = 'Copy All to Clipboard (Pain Point + Angle + Subject + Body)';
+    }}, 2000);
+  }});
+}}
+</script>
+"""
+components.html(copy_btn_html, height=52)
+
+with st.expander("📄 View Plain Text Copy Bundle", expanded=False):
+    st.code(bundle_text, language="text")
 
 act_col1, act_col2, act_col3, act_col4 = st.columns(4)
 

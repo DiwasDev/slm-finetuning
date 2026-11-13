@@ -220,6 +220,7 @@ HTML_PAGE = """<!DOCTYPE html>
         <div class="decision-bar">
           <div id="status-msg" class="status-msg"></div>
           <div class="decision-buttons">
+            <button class="btn" style="border-color: #4e5166; background: #262730; color: #fff;" onclick="copyLeadBundle()"><span id="copy-icon">📋</span> <span id="copy-btn-text">Copy All to Clipboard</span></button>
             <button class="btn btn-green" onclick="submitDecision('accept')"><span>✓</span> Accept Verbatim</button>
             <button class="btn btn-primary" onclick="submitDecision('revise')"><span>✎</span> Save as Revised</button>
             <button class="btn btn-danger" style="color: #ff8585; border-color: #ff4b4b;" onclick="submitDecision('reject')"><span>✕</span> Reject</button>
@@ -233,6 +234,43 @@ HTML_PAGE = """<!DOCTYPE html>
   <script>
     let leadsData = [];
     let currentLead = null;
+
+    function copyLeadBundle() {
+      if (!currentLead) return;
+      const pain = (document.getElementById('field-pain').value || '').trim();
+      const angle = (document.getElementById('field-angle').value || '').trim();
+      const subject = (document.getElementById('field-subject').value || '').trim();
+      const body = (document.getElementById('field-body').value || '').trim();
+      
+      const text = `PROSPECT: ${currentLead.name} (${currentLead.company || currentLead.sector})\nSECTOR: ${currentLead.sector.toUpperCase()}\nWEBSITE: ${currentLead.website || 'N/A'}\nLINKEDIN: ${currentLead.linkedin || 'N/A'}\n\n1. OPERATIONAL PAIN POINT:\n${pain}\n\n2. PERSONALIZATION ANGLE:\n${angle}\n\n3. SUBJECT:\n${subject}\n\n4. EMAIL BODY:\n${body}`;
+      
+      const btn = document.getElementById('copy-btn-text');
+      const icon = document.getElementById('copy-icon');
+
+      navigator.clipboard.writeText(text).then(() => {
+        btn.innerText = 'Copied to Clipboard!';
+        icon.innerText = '✅';
+        setTimeout(() => {
+          btn.innerText = 'Copy All to Clipboard';
+          icon.innerText = '📋';
+        }, 2500);
+      }).catch(() => {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        btn.innerText = 'Copied!';
+        icon.innerText = '✅';
+        setTimeout(() => {
+          btn.innerText = 'Copy All to Clipboard';
+          icon.innerText = '📋';
+        }, 2000);
+      });
+    }
 
     async function loadData() {
       const res = await fetch('/api/leads');
