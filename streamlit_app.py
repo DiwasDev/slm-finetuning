@@ -62,9 +62,13 @@ with st.sidebar.expander("📊 Partition Summary", expanded=False):
         total_p = sum(sc.values())
         st.caption(f"**{p.upper()}** — {total_p} leads | {done} reviewed")
 
+if "status_filter_key" not in st.session_state:
+    st.session_state["status_filter_key"] = "All"
+
 status_filter = st.sidebar.selectbox(
     "Filter by Status",
     ["All", "needs-review", "revised", "accepted", "rejected", "uncertain"],
+    key="status_filter_key",
 )
 
 sector_filter = st.sidebar.selectbox(
@@ -90,13 +94,30 @@ filtered_leads = [
     and (partition_filter == "All" or l.get("partition") == partition_filter)
 ]
 
-if not filtered_leads:
-    st.info("No leads match the selected filters.")
-    st.stop()
-
-# Initialize session state for selected lead ID
 all_lead_ids = [l["source_id"] for l in all_leads]
 filtered_ids = [l["source_id"] for l in filtered_leads]
+
+if not filtered_leads:
+    if reviewed_count == total and total > 0:
+        st.balloons()
+        st.success(f"🎉 **Review Complete! All {total} leads have been reviewed by Diwas.**")
+        col_s1, col_s2, col_s3, col_s4 = st.columns(4)
+        col_s1.metric("Revised", sum(1 for l in all_leads if l["state"] == "revised"))
+        col_s2.metric("Accepted", sum(1 for l in all_leads if l["state"] == "accepted"))
+        col_s3.metric("Rejected", sum(1 for l in all_leads if l["state"] == "rejected"))
+        col_s4.metric("Approved for Training", sum(1 for l in all_leads if l["state"] in {"revised", "accepted"}))
+        st.info("To inspect any reviewed lead, change **Filter by Status** in the sidebar to **All** or **revised**.")
+        if st.button("👁️ View All Reviewed Leads"):
+            st.session_state["status_filter_key"] = "All"
+            st.session_state["selected_id"] = all_lead_ids[0]
+            st.rerun()
+    else:
+        st.info("No leads match the selected filters. Try changing or clearing the sidebar filters.")
+        if st.button("🔄 Reset to All Leads"):
+            st.session_state["status_filter_key"] = "All"
+            st.session_state["selected_id"] = all_lead_ids[0]
+            st.rerun()
+    st.stop()
 
 if "selected_id" not in st.session_state or st.session_state["selected_id"] not in all_lead_ids:
     pending_in_filtered = [l["source_id"] for l in filtered_leads if l["state"] == "needs-review"]
