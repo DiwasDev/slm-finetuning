@@ -1,0 +1,24 @@
+digraph genesis {
+  rankdir=LR;
+  node [shape=box,fontname="system-ui"];
+  "file:export_dataset.py" [label="export_dataset.py",class="file"];
+  "file:review.py" [label="review.py",class="file"];
+  "file:src/audit.py" [label="src/audit.py",class="file"];
+  "file:src/decision.py" [label="src/decision.py",class="file"];
+  "file:src/export.py" [label="src/export.py",class="file"];
+  "file:src/ingest.py" [label="src/ingest.py",class="file"];
+  "file:src/recovery.py" [label="src/recovery.py",class="file"];
+  "file:src/review_cli.py" [label="src/review_cli.py",class="file"];
+  "file:src/schema.py" [label="src/schema.py",class="file"];
+  "file:src/teacher.py" [label="src/teacher.py",class="file"];
+  "file:tests/test_audit.py" [label="tests/test_audit.py",class="file"];
+  "file:tests/test_decision.py" [label="tests/test_decision.py",class="file"];
+  "file:tests/test_docs.py" [label="tests/test_docs.py",class="file"];
+  "file:tests/test_export.py" [label="tests/test_export.py",class="file"];
+  "file:tests/test_ingest.py" [label="tests/test_ingest.py",class="file"];
+  "file:tests/test_recovery.py" [label="tests/test_recovery.py",class="file"];
+  "file:tests/test_review_cli.py" [label="tests/test_review_cli.py",class="file"];
+  "file:tests/test_schema.py" [label="tests/test_schema.py",class="file"];
+  "file:tests/test_teacher.py" [label="tests/test_teacher.py",class="file"];
+
+}

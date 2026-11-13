@@ -1,0 +1,30 @@
+{
+  "task": "TASK-2-INGEST",
+  "gate": "test",
+  "kind": "command",
+  "attempt": "585d1cfb-1271-45c3-a7b1-ced9533007ac",
+  "command": "node tests/test_ingest.mjs",
+  "started_at": "2026-11-12T09:36:28.532Z",
+  "observed_at": "2026-11-12T09:36:28.840Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "--- Running Ingestion & Immutability Tests ---\n All ingestion and immutability assertions passed successfully.\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": null,
+    "dirty": null
+  },
+  "source_hash": "a2aa255d65c50b18730821d061896655bdf6efda987d30013faa1cab4148020a",
+  "before_hash": "a2aa255d65c50b18730821d061896655bdf6efda987d30013faa1cab4148020a",
+  "config_hash": "7fa3af7acc99a07f786a1595904ce95843bcd2d393b3c330dc1c8eea2ad4b146",
+  "environment": {
+    "node": "v26.13.0",
+    "platform": "win32",
+    "arch": "x64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "2961e166f7244bade9c65c051b18e3c5ed600cfa261f7c6b8ed0402d237e4085"
+}

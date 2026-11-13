@@ -1,0 +1,30 @@
+{
+  "task": "TASK-8-RECOVERY",
+  "gate": "test",
+  "kind": "command",
+  "attempt": "80475b4c-dfb7-488a-aa77-50931686d87e",
+  "command": "python tests/test_recovery.py",
+  "started_at": "2026-11-12T14:26:42.648Z",
+  "observed_at": "2026-11-12T14:26:50.505Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "ALL RECOVERY TESTS PASSED\r\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "132c1f226f3b538a8116e4b0d54928389a2dcbc3",
+    "dirty": true
+  },
+  "source_hash": "a67b4749431182fa05930b971376ba1f6a6e63762180ba127990e44d9da5c14c",
+  "before_hash": "a67b4749431182fa05930b971376ba1f6a6e63762180ba127990e44d9da5c14c",
+  "config_hash": "9c93385475c57647c2761c86f1771618b5c923b75fd5708fac635a56d685c8d6",
+  "environment": {
+    "node": "v26.13.0",
+    "platform": "win32",
+    "arch": "x64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "2345ff992e62f40a4d78a65ca737b1d02ea7aca2ec5da7f0f3b33a2a12a9086e"
+}

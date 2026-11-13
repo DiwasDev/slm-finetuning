@@ -1,0 +1,30 @@
+{
+  "task": "TASK-1-SCHEMA",
+  "gate": "test",
+  "kind": "command",
+  "attempt": "f62a5a51-f7dc-4199-b988-d99de7c43a49",
+  "command": "node tests/test_schema.mjs",
+  "started_at": "2026-11-12T09:35:39.060Z",
+  "observed_at": "2026-11-12T09:35:39.303Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "--- Running Schema & Validator Tests ---\n All schema and validator assertions passed successfully.\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": null,
+    "dirty": null
+  },
+  "source_hash": "5f2a2e49891911fd559c8cf392191d0b3b247aeec76e4badb248594f41127141",
+  "before_hash": "5f2a2e49891911fd559c8cf392191d0b3b247aeec76e4badb248594f41127141",
+  "config_hash": "a67c8771996e48ad1ba278d55a9e8fd0b74e71f8dcee160816d53534eedcb5b8",
+  "environment": {
+    "node": "v26.13.0",
+    "platform": "win32",
+    "arch": "x64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "2c74524a51b8410c760c381efcf4b0abcc3acad5760c78fd3751576899ec6c9f"
+}

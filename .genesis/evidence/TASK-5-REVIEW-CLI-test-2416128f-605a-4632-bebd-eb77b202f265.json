@@ -1,0 +1,30 @@
+{
+  "task": "TASK-5-REVIEW-CLI",
+  "gate": "test",
+  "kind": "command",
+  "attempt": "2416128f-605a-4632-bebd-eb77b202f265",
+  "command": "python tests/test_review_cli.py",
+  "started_at": "2026-11-12T14:03:59.538Z",
+  "observed_at": "2026-11-12T14:04:01.257Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "ALL REVIEW CLI TESTS PASSED\r\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "132c1f226f3b538a8116e4b0d54928389a2dcbc3",
+    "dirty": true
+  },
+  "source_hash": "e0501f053fc74ded52d5973c34f31d12d1047e8f717e14232c2f8930e5cadbe8",
+  "before_hash": "e0501f053fc74ded52d5973c34f31d12d1047e8f717e14232c2f8930e5cadbe8",
+  "config_hash": "6effffbf4c7b83e586a717278451c51e0f5b5ac4968af94976ad8f4f24970453",
+  "environment": {
+    "node": "v26.13.0",
+    "platform": "win32",
+    "arch": "x64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "8604ee5ebe4a4cda1a22105b798835b01115f1f6a58dffd102c624adc6247744"
+}

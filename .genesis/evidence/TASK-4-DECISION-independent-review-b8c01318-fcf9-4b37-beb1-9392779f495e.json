@@ -1,0 +1,13 @@
+{
+  "task": "TASK-4-DECISION",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "b8c01318-fcf9-4b37-beb1-9392779f495e",
+  "human": "Diwas",
+  "reason": "Approved decision state engine with verified external Claude candidate dataset",
+  "observed_at": "2026-11-12T14:02:41.148Z",
+  "source_hash": "592a26f1bc10fd406a128da5fc4f40666f260ba30e85c55b0f0a91b03868fca3",
+  "config_hash": "61357f95ed1ca60c00936f5efbce61080e737585250a068934384b68819abca4",
+  "reviewed_proofs": "be7cec91832fbf4b961504032b2fdc8ac0a0227c34c0f13a27577bb6498a967d",
+  "hash": "2b2ecc549e1c0f99bb7589e2e76d23347f8f0df8dd4b6d81c064f313e99941a6"
+}

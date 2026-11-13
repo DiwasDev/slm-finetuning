@@ -1,0 +1,30 @@
+{
+  "task": "TASK-6-EXPORT",
+  "gate": "test",
+  "kind": "command",
+  "attempt": "7c2413f7-22e0-4f0d-a646-db3e1669297b",
+  "command": "python tests/test_export.py",
+  "started_at": "2026-11-12T14:23:36.583Z",
+  "observed_at": "2026-11-12T14:23:38.615Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "ALL EXPORT TESTS PASSED\r\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "132c1f226f3b538a8116e4b0d54928389a2dcbc3",
+    "dirty": true
+  },
+  "source_hash": "80cb441b21be56b5ec5e932e35fba2983623392327f8df2e1f1be207f19478ab",
+  "before_hash": "80cb441b21be56b5ec5e932e35fba2983623392327f8df2e1f1be207f19478ab",
+  "config_hash": "690b8537240e22883c8836b82623a394315a7a9443336a1e28d607126b42b49c",
+  "environment": {
+    "node": "v26.13.0",
+    "platform": "win32",
+    "arch": "x64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "aced3e47feffbe18cf3eae656e25378f84f9975cc6a43d1e2c5bc5b3d137691b"
+}

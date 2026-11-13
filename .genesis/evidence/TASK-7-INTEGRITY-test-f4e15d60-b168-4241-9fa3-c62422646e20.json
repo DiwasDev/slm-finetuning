@@ -1,0 +1,30 @@
+{
+  "task": "TASK-7-INTEGRITY",
+  "gate": "test",
+  "kind": "command",
+  "attempt": "f4e15d60-b168-4241-9fa3-c62422646e20",
+  "command": "python tests/test_audit.py",
+  "started_at": "2026-11-12T14:25:18.947Z",
+  "observed_at": "2026-11-12T14:25:23.168Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "ALL AUDIT TESTS PASSED\r\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "132c1f226f3b538a8116e4b0d54928389a2dcbc3",
+    "dirty": true
+  },
+  "source_hash": "2642aba362f39f5d0af5659fa8525b06e3cfe4aeafb717a9080ef27660bc2e69",
+  "before_hash": "2642aba362f39f5d0af5659fa8525b06e3cfe4aeafb717a9080ef27660bc2e69",
+  "config_hash": "d818665866d3ae4475e98d794fcce8fcfd82717c07f0d9f0447726b3534f2562",
+  "environment": {
+    "node": "v26.13.0",
+    "platform": "win32",
+    "arch": "x64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "2edb17f3556aa95681f4daeb2f29304787d635b617a458031fb2c1e395b3d00f"
+}

@@ -1,0 +1,30 @@
+{
+  "task": "TASK-4-DECISION",
+  "gate": "test",
+  "kind": "command",
+  "attempt": "44c09485-640d-4b6a-839d-dc4f80ac8a0b",
+  "command": "python tests/test_decision.py",
+  "started_at": "2026-11-12T14:02:31.733Z",
+  "observed_at": "2026-11-12T14:02:33.645Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "ALL DECISION TESTS PASSED\r\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "132c1f226f3b538a8116e4b0d54928389a2dcbc3",
+    "dirty": true
+  },
+  "source_hash": "592a26f1bc10fd406a128da5fc4f40666f260ba30e85c55b0f0a91b03868fca3",
+  "before_hash": "592a26f1bc10fd406a128da5fc4f40666f260ba30e85c55b0f0a91b03868fca3",
+  "config_hash": "61357f95ed1ca60c00936f5efbce61080e737585250a068934384b68819abca4",
+  "environment": {
+    "node": "v26.13.0",
+    "platform": "win32",
+    "arch": "x64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "b1e2397a6699154596b71a50abb0c37c83bc3cbfe398c7e4313d0e1983111180"
+}

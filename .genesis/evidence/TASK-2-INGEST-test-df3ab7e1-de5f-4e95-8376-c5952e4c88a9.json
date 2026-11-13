@@ -1,0 +1,30 @@
+{
+  "task": "TASK-2-INGEST",
+  "gate": "test",
+  "kind": "command",
+  "attempt": "df3ab7e1-de5f-4e95-8376-c5952e4c88a9",
+  "command": "python tests/test_ingest.py",
+  "started_at": "2026-11-12T12:50:23.613Z",
+  "observed_at": "2026-11-12T12:50:26.426Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "ALL INGESTION TESTS PASSED\r\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "132c1f226f3b538a8116e4b0d54928389a2dcbc3",
+    "dirty": true
+  },
+  "source_hash": "005586c873b2f42b03d73b822bccffb829b9e72e42fb89e1d446bd07638063de",
+  "before_hash": "005586c873b2f42b03d73b822bccffb829b9e72e42fb89e1d446bd07638063de",
+  "config_hash": "e1c302e9ff8388923ce322d6ca10635654d145fb30710539d196c58a95e92f50",
+  "environment": {
+    "node": "v26.13.0",
+    "platform": "win32",
+    "arch": "x64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "7c23d473216042f4627a6cd5adeefe509843152ed96ffb0461b841ca0a76232d"
+}

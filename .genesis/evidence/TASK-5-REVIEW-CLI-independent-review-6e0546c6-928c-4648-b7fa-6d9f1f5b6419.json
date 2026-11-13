@@ -1,0 +1,13 @@
+{
+  "task": "TASK-5-REVIEW-CLI",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "6e0546c6-928c-4648-b7fa-6d9f1f5b6419",
+  "human": "Diwas",
+  "reason": "Approved review CLI with LinkedIn and website contact link display",
+  "observed_at": "2026-11-12T14:22:19.894Z",
+  "source_hash": "3c69fad87dd89e473e0debe9077d9e1ed1b50c2f7931fc3db5788d16e995f5fa",
+  "config_hash": "6effffbf4c7b83e586a717278451c51e0f5b5ac4968af94976ad8f4f24970453",
+  "reviewed_proofs": "bb12e728a2527012f14fa5397f093db7abbb506a6376b2760dac30d2c0b67771",
+  "hash": "a60c9e4c8aab97815d155072c5a495189d4358cbcbf831d699e4934bd75da21c"
+}

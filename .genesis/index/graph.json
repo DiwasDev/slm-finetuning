@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 2,
+  "project": "slm-2",
+  "revision": "4564fe14c7a51e6f565b578c5fed4a9067a3dc62",
+  "sourceHash": "32df005b1389e053e3988de63029cc407e88893fc6429239982792eb7f0187ff",
+  "provenance": {
+    "tool": "genesis-graphizer",
+    "method": "static-analysis",
+    "confidenceScale": "0..1"
+  },
+  "nodes": [
+    {
+      "id": "file:export_dataset.py",
+      "type": "file",
+      "label": "export_dataset.py",
+      "path": "export_dataset.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "b2a4ab7e68af45ea57f2bf21df9d98da7fbb9fdb5cb2ff6004fae4db0faf14bb"
+    },
+    {
+      "id": "file:review.py",
+      "type": "file",
+      "label": "review.py",
+      "path": "review.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "8419e6c10b44426ff6296e6abce7e6fa531b3c001db466e51a127830c1fda31c"
+    },
+    {
+      "id": "file:src/audit.py",
+      "type": "file",
+      "label": "src/audit.py",
+      "path": "src/audit.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "96352171b898e719a9c4053526a20db01531058e05577a209327ae880f99b0ad"
+    },
+    {
+      "id": "file:src/decision.py",
+      "type": "file",
+      "label": "src/decision.py",
+      "path": "src/decision.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "85337636c02f4dbffee267ed8cf9b37115c4d36e7362db6e823b4c6416239a73"
+    },
+    {
+      "id": "file:src/export.py",
+      "type": "file",
+      "label": "src/export.py",
+      "path": "src/export.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "cceabbb4be2bf01a1b8eaf79ce91d73f93cbc68874e23e4f6d0bf797ae3a5f71"
+    },
+    {
+      "id": "file:src/ingest.py",
+      "type": "file",
+      "label": "src/ingest.py",
+      "path": "src/ingest.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "2a5789404a629e98d64f64ef2d82dda3a55a4220c8278cd883df1392042732d4"
+    },
+    {
+      "id": "file:src/recovery.py",
+      "type": "file",
+      "label": "src/recovery.py",
+      "path": "src/recovery.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "1a2a7838419c3da48cd80d21836e7b71c07724b1d1e84c7f80075a0896fd75f9"
+    },
+    {
+      "id": "file:src/review_cli.py",
+      "type": "file",
+      "label": "src/review_cli.py",
+      "path": "src/review_cli.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "a751ef18a1f06133f1c7194ed7f549211a7a177c80a8e31aa3b6781d88eeae79"
+    },
+    {
+      "id": "file:src/schema.py",
+      "type": "file",
+      "label": "src/schema.py",
+      "path": "src/schema.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "528dce51c59a15c2cf20d382d719776afa58dcf7db3c94fb87b15f6b5e1b1e6c"
+    },
+    {
+      "id": "file:src/teacher.py",
+      "type": "file",
+      "label": "src/teacher.py",
+      "path": "src/teacher.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "4630488f2ba3cb6d5f571fd8d65176d175cd36b5deae49e5e4aaf5c7e331b16c"
+    },
+    {
+      "id": "file:tests/test_audit.py",
+      "type": "file",
+      "label": "tests/test_audit.py",
+      "path": "tests/test_audit.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "85942f09ca691cd9c2b89eef4cece53ffdf57cf38318e5fc40a28ed127d0f1e6"
+    },
+    {
+      "id": "file:tests/test_decision.py",
+      "type": "file",
+      "label": "tests/test_decision.py",
+      "path": "tests/test_decision.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "50c647ea19ca34578de24589aa177dee1dbe89c282087632760e6cbc46ce0e1c"
+    },
+    {
+      "id": "file:tests/test_docs.py",
+      "type": "file",
+      "label": "tests/test_docs.py",
+      "path": "tests/test_docs.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "e32c6c7497119dcd3483f0130d96031d444f8c64ea45fbb3a1e0cf778cdedfc6"
+    },
+    {
+      "id": "file:tests/test_export.py",
+      "type": "file",
+      "label": "tests/test_export.py",
+      "path": "tests/test_export.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "65181d3faaacd8da6cbdab76227e83eb10a7a59323ffdceedcb6b3d9e4f5e2ac"
+    },
+    {
+      "id": "file:tests/test_ingest.py",
+      "type": "file",
+      "label": "tests/test_ingest.py",
+      "path": "tests/test_ingest.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "5a8a1ec791352168727f10608ce7ddaafbdc543912f126e518539e61c6d0d70a"
+    },
+    {
+      "id": "file:tests/test_recovery.py",
+      "type": "file",
+      "label": "tests/test_recovery.py",
+      "path": "tests/test_recovery.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "be30e4b265889b0619299e6cbfa7b8fece04fa53f81a1c77284ce74396fceb51"
+    },
+    {
+      "id": "file:tests/test_review_cli.py",
+      "type": "file",
+      "label": "tests/test_review_cli.py",
+      "path": "tests/test_review_cli.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "46c8f4b78589b007cdc87f81ffefd30eb38f2e8068a97d1bd53329e041b6ff4d"
+    },
+    {
+      "id": "file:tests/test_schema.py",
+      "type": "file",
+      "label": "tests/test_schema.py",
+      "path": "tests/test_schema.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "f3d5cf8bd3db95905cf853b44c557066f1472ea17cc47373fd8223a46f1d67b2"
+    },
+    {
+      "id": "file:tests/test_teacher.py",
+      "type": "file",
+      "label": "tests/test_teacher.py",
+      "path": "tests/test_teacher.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "efc7e6e9a388d28b51968ed5662ea3c1d856274981815ce4f4e046ced7342089"
+    }
+  ],
+  "edges": [],
+  "warnings": [
+    "Python AST unavailable: python3 failed"
+  ],
+  "stats": {
+    "unresolvedCalls": 0
+  }
+}

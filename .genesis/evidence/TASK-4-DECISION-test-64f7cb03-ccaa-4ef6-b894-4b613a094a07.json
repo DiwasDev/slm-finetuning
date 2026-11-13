@@ -1,0 +1,30 @@
+{
+  "task": "TASK-4-DECISION",
+  "gate": "test",
+  "kind": "command",
+  "attempt": "64f7cb03-ccaa-4ef6-b894-4b613a094a07",
+  "command": "node tests/test_decision.mjs",
+  "started_at": "2026-11-12T09:38:06.382Z",
+  "observed_at": "2026-11-12T09:38:06.838Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "--- Running Decision State Machine & Staleness Tests ---\n All decision state machine and staleness assertions passed successfully.\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": null,
+    "dirty": null
+  },
+  "source_hash": "2118b32ffecadcf201265ba2ef7ce931de1a2ce084fed101080421e20acf7c22",
+  "before_hash": "2118b32ffecadcf201265ba2ef7ce931de1a2ce084fed101080421e20acf7c22",
+  "config_hash": "9d62f8882a5b14ba6ea9b679e5217dae1eea013bb0538ce7585f5aba57ab617c",
+  "environment": {
+    "node": "v26.13.0",
+    "platform": "win32",
+    "arch": "x64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "4dcdc45715884d62793aaa0ae7401c6d5885155ac560c760a719d773e5df1dfb"
+}

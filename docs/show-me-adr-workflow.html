@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verifiable ADR Data-Labeling & Decision Workflow</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --accent: #818cf8;
+      --success: #34d399;
+      --warning: #fbbf24;
+      --danger: #f87171;
+      --purple: #c084fc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: #1e3a8a;
+      color: #93c5fd;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+    }
+
+    .card h2 {
+      font-size: 1.15rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .pipeline {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      position: relative;
+    }
+
+    .step {
+      background: #0b1120;
+      border-left: 4px solid var(--primary);
+      padding: 1rem;
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    .step.immutable {
+      border-left-color: var(--danger);
+    }
+
+    .step.teacher {
+      border-left-color: var(--accent);
+    }
+
+    .step.human {
+      border-left-color: var(--warning);
+    }
+
+    .step.export {
+      border-left-color: var(--success);
+    }
+
+    .step-header {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 0.25rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .code-box {
+      background: #020617;
+      border: 1px solid #1e293b;
+      border-radius: 0.375rem;
+      padding: 0.75rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.8rem;
+      color: #cbd5e1;
+      overflow-x: auto;
+      margin-top: 0.5rem;
+    }
+
+    .state-pill {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.25rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-right: 0.35rem;
+    }
+
+    .pill-proposed {
+      background: #1e293b;
+      color: #94a3b8;
+      border: 1px solid #475569;
+    }
+
+    .pill-needs-review {
+      background: #451a03;
+      color: #fcd34d;
+      border: 1px solid #78350f;
+    }
+
+    .pill-accepted {
+      background: #064e3b;
+      color: #6ee7b7;
+      border: 1px solid #047857;
+    }
+
+    .pill-revised {
+      background: #1e1b4b;
+      color: #a5b4fc;
+      border: 1px solid #4338ca;
+    }
+
+    .pill-rejected {
+      background: #450a0a;
+      color: #fca5a5;
+      border: 1px solid #991b1b;
+    }
+
+    .pill-uncertain {
+      background: #3b0764;
+      color: #d8b4fe;
+      border: 1px solid #7e22ce;
+    }
+
+    .interactive-demo {
+      background: #020617;
+      border: 1px solid #334155;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+    }
+
+    .tab-bar {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 0.5rem;
+    }
+
+    .tab-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 0.375rem;
+    }
+
+    .tab-btn.active {
+      background: #1e293b;
+      color: var(--primary);
+    }
+
+    .stat-row {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .stat-card {
+      flex: 1;
+      background: #0b1120;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      border: 1px solid #1e293b;
+      text-align: center;
+    }
+
+    .stat-val {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <span class="badge">Genesis Specification Verified</span>
+    <h1>ADR Data-Labeling & Decision Architecture</h1>
+    <p style="color: var(--text-muted); font-size: 0.95rem;">SLM Cold-Outreach Pipeline &bull; Provenance &bull; Diwas
+      Editorial Review &bull; JSONL Export</p>
+  </header>
+
+  <div class="grid">
+    <!-- Pipeline Flow -->
+    <div class="card">
+      <h2><span>⚡</span> Pipeline Flow</h2>
+      <div class="pipeline">
+        <div class="step immutable">
+          <div class="step-header">
+            <span>1. Raw Source Data (Immutable)</span>
+            <span style="color: var(--danger); font-size: 0.75rem;">SHA-256 Verified</span>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted);">
+            <code>data/marketing.json</code> (34) + <code>data/accounting.json</code> (14)<br />
+            Context $x_i$ & sent drafts $y_{\text{raw}}$
+          </p>
+        </div>
+
+        <div class="step teacher">
+          <div class="step-header">
+            <span>2. Claude Sonnet Teacher Pass</span>
+            <span style="color: var(--accent); font-size: 0.75rem;">$\tilde{y}_i \sim \mathcal{T}(x_i \mid \pi)$</span>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted);">
+            Decomposes email into 4-field taxonomy:<br />
+            <code>pain_point</code>, <code>personalization_angle</code>, <code>subject</code>, <code>body</code>
+          </p>
+        </div>
+
+        <div class="step human">
+          <div class="step-header">
+            <span>3. Diwas Human Review Gate</span>
+            <span style="color: var(--warning); font-size: 0.75rem;">Sole Reviewer</span>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted);">
+            Fixed rubric inspection. Can accept verbatim, edit body/angle, reject, or mark uncertain.
+          </p>
+          <div style="margin-top: 0.5rem;">
+            <span class="state-pill pill-accepted">accepted</span>
+            <span class="state-pill pill-revised">revised</span>
+            <span class="state-pill pill-rejected">rejected</span>
+            <span class="state-pill pill-uncertain">uncertain</span>
+          </div>
+        </div>
+
+        <div class="step export">
+          <div class="step-header">
+            <span>4. Downstream SLM JSONL Dataset</span>
+            <span style="color: var(--success); font-size: 0.75rem;">100% Partition</span>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted);">
+            Clean exported dataset for LoRA SFT with complete cryptographic provenance and zero leakage.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4-Field Taxonomy Schema -->
+    <div class="card">
+      <h2><span>📋</span> Versioned Label Taxonomy</h2>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+        Strictly enforced by <code>src/schema.mjs</code>. Every candidate and decision record must satisfy this schema:
+      </p>
+      <div class="code-box">
+        {
+        "pain_point": "Diagnostic manual leak identified in lead business",
+        "personalization_angle": "Exact citation from LinkedIn post / website",
+        "subject": "Pattern-interrupt hook adhering to 22 rules",
+        "body": "Full cold outreach copy tailored to recipient"
+        }
+      </div>
+
+      <h2 style="margin-top: 1.25rem;"><span>🛡️</span> Provenance Attributes</h2>
+      <div class="code-box">
+        {
+        "source_id": "REC-marketing-a1b2c3d4",
+        "source_file": "data/marketing.json",
+        "source_hash": "e3b0c44298fc1c149afbf4c8996fb92427...",
+        "teacher_model": "claude-sonnet-4-6",
+        "reviewer": "Diwas",
+        "reviewed_at": "2026-11-12T15:10:00Z",
+        "decision_state": "accepted"
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Inspector Card -->
+  <div class="interactive-demo">
+    <h2 style="color: var(--primary); margin-bottom: 0.5rem;"><span>🔍</span> Dataset & Reviewer Inspection View</h2>
+    <div class="stat-row">
+      <div class="stat-card">
+        <div class="stat-val">48</div>
+        <div class="stat-label">Total Curated Leads</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">34</div>
+        <div class="stat-label">Marketing Agencies</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">14</div>
+        <div class="stat-label">Accounting Firms</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">100%</div>
+        <div class="stat-label">Training Partition Allocation</div>
+      </div>
+    </div>
+
+    <div
+      style="margin-top: 1.5rem; padding: 1rem; background: #0b1120; border-radius: 0.5rem; border: 1px solid #1e293b;">
+      <h3 style="font-size: 0.95rem; color: var(--accent); margin-bottom: 0.5rem;">Diwas Editorial Review Rubric Check
+        (ADR-001 §1.2 & §3)</h3>
+      <ul style="font-size: 0.85rem; color: var(--text-muted); list-style-position: inside;">
+        <li><strong>Diagnostic test:</strong> Does the <code>pain_point</code> name a real, operational time/profit leak
+          rather than a generic slogan?</li>
+        <li><strong>Evidence hook:</strong> Does the <code>personalization_angle</code> reference something only this
+          lead posted or published?</li>
+        <li><strong>Voice check:</strong> Does the body sound authentic to Diwas rather than generic Claude AI prose?
+          (Target: &ge;30% human edits)</li>
+        <li><strong>Framework compliance:</strong> Does the body strictly adhere to Noman's 22-rule cold outreach
+          constraints?</li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

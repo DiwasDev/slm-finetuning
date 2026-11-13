@@ -1,0 +1,30 @@
+{
+  "task": "TASK-9-DOCS",
+  "gate": "test",
+  "kind": "command",
+  "attempt": "41d691bb-48f6-44d4-ba52-2f1f959c8104",
+  "command": "python tests/test_docs.py",
+  "started_at": "2026-11-12T14:28:25.831Z",
+  "observed_at": "2026-11-12T14:28:32.492Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "ALL DOCS TESTS PASSED\r\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "132c1f226f3b538a8116e4b0d54928389a2dcbc3",
+    "dirty": true
+  },
+  "source_hash": "8419166ac3c94d0ecf05a5124385437951f11291e22ad30807fc28806fcb8e19",
+  "before_hash": "8419166ac3c94d0ecf05a5124385437951f11291e22ad30807fc28806fcb8e19",
+  "config_hash": "f2f55408e6c5bbfb146b783ba24ddc3e5d8083af49c783de76f1e72677ee9d9a",
+  "environment": {
+    "node": "v26.13.0",
+    "platform": "win32",
+    "arch": "x64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "65c212155baa8ebf9d4b98c19e2ae25e9b24d232a3c5e9cc9e0281aac9a383ea"
+}

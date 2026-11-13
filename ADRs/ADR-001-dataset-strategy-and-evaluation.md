@@ -1,4 +1,4 @@
-# ADR-001: Dataset Strategy, Assumptions, Failure Modes & Research Clusters
+~# ADR-001: Dataset Strategy, Assumptions, Failure Modes & Research Clusters
 
 **Status:** Active  
 **Date:** 2026-11-12  
@@ -227,3 +227,4 @@ These require Diwas's explicit decision before the pipeline is built:
 
 *This ADR is a living document. Update it as decisions are made and new failure modes are discovered.*
 
+~
