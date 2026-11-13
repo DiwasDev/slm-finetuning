@@ -33,33 +33,23 @@ The initial dataset contained 48 leads (34 marketing + 14 accounting). Empirical
 
 ```mermaid
 flowchart TD
-    subgraph "Before (48 Leads)"
-        A1["48 Leads (Raw PII)"] --> B1["Memorization Risk"]
-        A1 --> C1["No Held-Out Validation"]
-        A1 --> D1["Real Emails/Phones in Git"]
+    subgraph "Before (48 Leads Baseline)"
+        A1["48 Leads (Raw PII)"] --> B1["Memorization Risk (KK-1)"]
+        A1 --> C1["No Held-Out Validation Split"]
+        A1 --> D1["Real Emails/Phones in Git History"]
     end
-    subgraph "After (102 Leads - Current)"
-        A2["102 Clean Leads"] --> B2["PII Purged (RFC 2606)"]
+    subgraph "After (102 Leads - Current State)"
+        A2["102 Clean Leads"] --> B2["PII Purged (RFC 2606 Reserved)"]
         A2 --> C2["54 Diverse Synthetic Agencies"]
-        A2 --> D2["100% Diwas Reviewed (87% Edited)"]
-        A2 --> E2["Stratified 80/10/10 Split"]
+        A2 --> D2["100% Diwas Reviewed (87.3% Edited)"]
+        A2 --> E2["Stratified 80/10/10 Partition"]
         E2 --> F2["Train: 76 | Val: 10 | Test: 10"]
     end
 ```
 
 ---
 
-## 3. PII Scrubbing & Data Governance
-
-Before expansion, all personal data was scrubbed across the codebase and permanently purged from git history:
-- **Names:** Replaced with realistic business pseudonyms (*e.g., Alexander Hayes, Warren Ellis, Laura Palmer*).
-- **Emails:** Converted to RFC 2606 reserved domains (*e.g., `a.hayes@solari-cpa.example`, `@example.com`*).
-- **Phones:** Replaced with fictional numbers (`+1-555-0199`).
-- **Git Commit Purge:** Commit `132c1f2` was purged from git history so no commit tree references raw PII.
-
----
-
-## 4. End-to-End Pipeline Architecture
+## 3. End-to-End Pipeline Interaction
 
 ```mermaid
 sequenceDiagram
@@ -86,108 +76,152 @@ sequenceDiagram
 
 ---
 
-## 5. The 4-Field Label Taxonomy
+## 4. Decision Lifecycle State Machine
 
-Each training example is decomposed into a structured diagnostic chain:
+Every lead transitions through a formal state machine to ensure zero stale decisions and strict auditability:
 
-```text
-PROSPECT PROFILE:
-- Name, Company, Sector, Website, LinkedIn, Headline, About, Recent Posts
-
-OUTPUT TARGET:
-1. PAIN POINT:
-   Single diagnostic operational bottleneck or time/profit leak.
-   (No generic flattery; specific to agency scale or delivery complexity)
-
-2. PERSONALIZATION ANGLE:
-   Verifiable evidence trace cited from their public presence.
-   (Testimonial, case study metric, podcast appearance, specific tool)
-
-3. SUBJECT:
-   Pattern-interrupt hook under 8 words adhering to Noman's 22 rules.
-   (Zero spam triggers, casual/direct or operational phrasing)
-
-4. EMAIL BODY:
-   Under 85 words, 1 pain point, soft question CTA, low friction.
-   (Sign-off: "Regards,\nDiwas")
+```mermaid
+stateDiagram-v2
+    [*] --> proposed: Ingest from raw sources
+    proposed --> needs_review: Enqueued in decisions store
+    needs_review --> revised: Diwas adjusts hook / voice / body (89)
+    needs_review --> accepted: Diwas accepts verbatim (7)
+    needs_review --> rejected: Diwas disqualifies lead (6)
+    needs_review --> uncertain: Hold for second pass
+    uncertain --> revised: Resolved with edits
+    uncertain --> accepted: Resolved verbatim
+    uncertain --> rejected: Disqualified
+    revised --> revised: Re-edited in dashboard
+    revised --> accepted: Toggled to verbatim
+    accepted --> revised: Edited after accept
+    revised --> [*]: Exported to JSONL (slm_train/val/test)
+    accepted --> [*]: Exported to JSONL (slm_train/val/test)
+    rejected --> [*]: Withheld (Zero-Leakage)
 ```
 
 ---
 
-## 6. Runtime Call Tree
+## 5. The 4-Field Output Taxonomy
 
-```text
-review.py (or streamlit_app.py)
-  ├── init_decision_store()
-  │     └── load artifacts/decisions.json
-  ├── ingest_all_raw_data()
-  │     ├── ingest_raw_leads("marketing")   -> 88 leads
-  │     └── ingest_raw_leads("accounting")  -> 14 leads
-  ├── get_all_review_items()
-  │     ├── load_contact_directory()        -> data/contact/contact.json
-  │     └── load_external_claude_candidates() -> data/updated/*.json
-  ├── apply_review_decision()
-  │     ├── validate_transition()           -> state machine enforcement
-  │     └── persist_decision()              -> synchronous write to disk
-  ├── export_slm_dataset()
-  │     ├── filter_eligible()               -> 96 approved (6 rejected withheld)
-  │     ├── partition_records()             -> Train (76), Val (10), Test (10)
-  │     └── write_jsonl()                   -> 4 partitioned JSONL files
-  └── audit_exported_dataset()
-        ├── check_zero_leakage()            -> 0 rejected records exported
-        ├── check_zero_overlap()            -> Train ∩ Val = ∅, Train ∩ Test = ∅, Val ∩ Test = ∅
-        └── check_provenance()              -> SHA-256 verification
+The model is trained on a structured diagnostic chain. The inputs from the prospect's public presence map directly to the 4 targets:
+
+```mermaid
+flowchart TD
+    subgraph INPUT ["Prospect Profile (x_i)"]
+        I1["Website Copy & Case Studies"]
+        I2["LinkedIn Headline & About"]
+        I3["Recent Posts & Engagements"]
+        I4["Company Sector & Scale"]
+    end
+
+    subgraph TARGET ["4-Field SLM Training Output (y_i)"]
+        F1["1. Diagnostic Operational Pain Point<br/>(Real operational bottleneck or profit leak)"]
+        F2["2. Personalization Angle<br/>(Verifiable evidence citation from public presence)"]
+        F3["3. Pattern-Interrupt Subject Hook<br/>(Under 8 words, zero spam triggers, Noman's 22 rules)"]
+        F4["4. Email Message Body<br/>(Under 85 words, 1 pain point, soft question CTA, 'Regards, Diwas')"]
+    end
+
+    I1 --> F1
+    I2 --> F2
+    I3 --> F2
+    I4 --> F1
+    F1 --> F3
+    F1 --> F4
+    F2 --> F4
+    F3 --> F4
 ```
 
 ---
 
-## 7. Dataset Partition & Audit Proof
+## 6. Runtime Execution Flow
 
-The 102 leads are partitioned using an 80/10/10 stratified split:
+```mermaid
+flowchart TD
+    Start(["Launch Review UI / CLI"]) --> S1["init_decision_store()"]
+    S1 --> S2["ingest_all_raw_data()"]
+    S2 --> S3["get_all_review_items()"]
+    S3 --> S4["Render Review Card<br/>(LinkedIn + Website + 4 Fields)"]
+    S4 --> S5{"Diwas Decision"}
+    S5 -->|"Revise"| A1["apply_review_decision('revise')"]
+    S5 -->|"Accept"| A2["apply_review_decision('accept')"]
+    S5 -->|"Reject"| A3["apply_review_decision('reject')"]
+    A1 --> S6["Save synchronously to decisions.json"]
+    A2 --> S6
+    A3 --> S6
+    S6 --> S7["export_slm_dataset()"]
+    S7 --> S8["audit_exported_dataset()"]
+    S8 -->|"Verified (0 Errors)"| Done(["JSONL Datasets Ready for Fine-Tuning"])
+```
 
-$$\mathcal{D} = \mathcal{D}_{\text{train}} \cup \mathcal{D}_{\text{val}} \cup \mathcal{D}_{\text{test}} \quad (N = 102)$$
+---
+
+## 7. Dataset Partitioning & Cryptographic Isolation
+
+The 102 leads are partitioned into Train, Validation, and Test splits with mathematical zero-overlap and zero-leakage verification:
 
 $$\mathcal{D}_{\text{train}} \cap \mathcal{D}_{\text{val}} = \emptyset, \quad \mathcal{D}_{\text{train}} \cap \mathcal{D}_{\text{test}} = \emptyset, \quad \mathcal{D}_{\text{val}} \cap \mathcal{D}_{\text{test}} = \emptyset$$
 
-| Partition | Total Leads | Status | Exported Records | Purpose |
-|---|---|---|---|---|
-| **Train** | 82 | 76 approved, 6 rejected | **76 records** (`artifacts/slm_train.jsonl`) | Supervised fine-tuning via LoRA |
-| **Validation** | 10 | 10 approved | **10 records** (`artifacts/slm_val.jsonl`) | Perplexity & loss checkpointing |
-| **Test** | 10 | 10 approved | **10 records** (`artifacts/slm_test.jsonl`) | Held-out benchmark evaluation |
-| **Combined** | 102 | 96 approved | **96 records** (`artifacts/slm_all_partitioned.jsonl`) | Complete gold dataset |
+```mermaid
+flowchart TD
+    All["102 Total Leads (Curated & Anonymized)"] --> Review["Diwas Editorial Review (100% Reviewed)"]
+    
+    Review --> Approved["96 Approved Leads<br/>(89 Revised + 7 Accepted)"]
+    Review --> Rej["6 Disqualified Leads<br/>(Withheld per Zero-Leakage)"]
+    
+    Approved --> Split["Stratified Partition Split (80 / 10 / 10)"]
+    
+    Split --> Train["Train Partition (76 Approved Leads)<br/>artifacts/slm_train.jsonl"]
+    Split --> Val["Validation Partition (10 Approved Leads)<br/>artifacts/slm_val.jsonl"]
+    Split --> Test["Test Partition (10 Approved Leads)<br/>artifacts/slm_test.jsonl"]
+    
+    Train -.-> Proof{"Audit Proof:<br/>Train ∩ Val = ∅<br/>Train ∩ Test = ∅<br/>Val ∩ Test = ∅"}
+    Val -.-> Proof
+    Test -.-> Proof
+    Proof --> Verified["✅ Verified Cryptographic Zero-Overlap"]
+```
 
 ---
 
-## 8. File Responsibilities
+## 8. System Module Architecture
 
-```text
-slm-2/
-├── ADRs/
-│   └── ADR-001-dataset-strategy-and-evaluation.md  # Core architectural record (amended)
-├── data/
-│   ├── accounting.json                            # 14 anonymized CPA leads
-│   ├── marketing.json                             # 88 anonymized agency leads (34 orig + 54 syn)
-│   ├── contact/contact.json                       # 102 clean contact references
-│   └── updated/                                   # Claude 4-field candidate decompositions
-├── artifacts/
-│   ├── decisions.json                             # 102 decision records (Diwas reviewed)
-│   ├── slm_train.jsonl                            # 76 training examples
-│   ├── slm_val.jsonl                              # 10 validation examples
-│   ├── slm_test.jsonl                             # 10 test examples
-│   └── slm_all_partitioned.jsonl                  # 96 combined examples
-├── src/
-│   ├── schema.py                                  # Schema & transition rules
-│   ├── ingest.py                                  # SHA-256 provenance & lead ingestion
-│   ├── teacher.py                                 # Teacher prompt & candidate generator
-│   ├── decision.py                                # Decision store state machine
-│   ├── review_cli.py                              # Review business logic & queue
-│   ├── export.py                                  # Partitioned JSONL exporter
-│   ├── audit.py                                   # Cryptographic integrity auditor
-│   └── recovery.py                                # Interruption recovery & idempotency
-├── docs/
-│   ├── pipeline-guide.md                          # This architecture guide
-│   ├── workflow.md                                # Operator workflow guide
-│   └── show-me-pipeline.html                      # Visual interactive architecture diagram
-├── streamlit_app.py                               # Full Streamlit editorial dashboard
-└── app.py                                         # Zero-dependency local web dashboard
+```mermaid
+flowchart LR
+    subgraph DATA ["Data Layer"]
+        D1["data/marketing.json (88)"]
+        D2["data/accounting.json (14)"]
+        D3["data/contact/contact.json (102)"]
+        D4["data/updated/*.json"]
+    end
+
+    subgraph ENGINE ["Core Engine (src/)"]
+        M1["ingest.py"]
+        M2["decision.py"]
+        M3["review_cli.py"]
+        M4["export.py"]
+        M5["audit.py"]
+        M6["schema.py"]
+        M7["recovery.py"]
+    end
+
+    subgraph UI ["User Interfaces"]
+        U1["streamlit_app.py"]
+        U2["app.py"]
+    end
+
+    subgraph OUTPUT ["Exported Artifacts"]
+        A1["artifacts/slm_train.jsonl (76)"]
+        A2["artifacts/slm_val.jsonl (10)"]
+        A3["artifacts/slm_test.jsonl (10)"]
+        A4["artifacts/slm_all_partitioned.jsonl (96)"]
+    end
+
+    DATA --> M1
+    M1 --> M2
+    M2 --> M3
+    M3 --> UI
+    UI --> M2
+    M2 --> M4
+    M4 --> M5
+    M4 --> OUTPUT
+    M5 --> OUTPUT
 ```
