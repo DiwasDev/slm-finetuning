@@ -1,15 +1,15 @@
 {
   "version": "1.1.0",
-  "description": "ADR-001 verifiable human decision store (PII-free, 102 leads, 80/10/10 split)",
+  "description": "ADR-001 verifiable human decision store (48 reviewed, 54 needs-review, 80/10/10 split)",
   "decisions": {
     "REC-accounting-262b219d8781": {
       "source_id": "REC-accounting-262b219d8781",
       "source_file": "data/accounting.json",
       "source_hash": "262b219d878122542435101caa7e1f6fa444488cd8ba61cfae1e42fa9fa2acf2",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "Managing partner who personally oversees client decision-making and leads a multi-specialist team \u2014 high-judgment time is likely eaten by coordination and low-stakes administrative work that doesn't require a CPA.",
@@ -22,10 +22,10 @@
       "source_id": "REC-accounting-0ea0167d3077",
       "source_file": "data/accounting.json",
       "source_hash": "0ea0167d307797ce605dbae66e8ffb4601e0e43edf6f16113e48e9ecf34bbdde",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "A boutique firm serving high-net-worth individuals across complex, multi-layered tax scenarios (stock options, trusts, charitable structures, 1031 exchanges) while also running adjunct teaching responsibilities \u2014 high-value client work is likely diluted by manual document handling and client intake coordination.",
@@ -38,10 +38,10 @@
       "source_id": "REC-accounting-0a31263c8080",
       "source_file": "data/accounting.json",
       "source_hash": "0a31263c8080d23fdad7b17edec89d77afe768a9031557a7b7d2c293bcba8a67",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "A full-service firm offering payroll, bookkeeping, tax prep, forensic accounting, and business valuation \u2014 the breadth of service lines almost certainly means staff are toggling across manual processes (payroll runs, ledger updates, document intake) that eat time without adding professional judgment.",
@@ -54,10 +54,10 @@
       "source_id": "REC-accounting-65b5c86b4ce5",
       "source_file": "data/accounting.json",
       "source_hash": "65b5c86b4ce59a7a8c09548de2468cbbbeab81b655462d5ac3f57265b43689a9",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "A San Mateo CPA firm serving business owners who rely on QuickBooks \u2014 likely spending staff time on manual QuickBooks setup, reconciliations, and client onboarding questions that could be systematized.",
@@ -70,10 +70,10 @@
       "source_id": "REC-accounting-5f2e68099605",
       "source_file": "data/accounting.json",
       "source_hash": "5f2e68099605dd39ac7d61207381d278b8e6ac2a4fa36d79ea6ee4b73c84ae89",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "A bookkeeping firm built around a team-based, high-touch service model (guaranteed same-day email response, on-site visits, association management admin) \u2014 the volume of client communications, membership record maintenance, and manual scheduling is a direct time-profit drain that scales against headcount.",
@@ -86,10 +86,10 @@
       "source_id": "REC-accounting-50ebb4302e52",
       "source_file": "data/accounting.json",
       "source_hash": "50ebb4302e5277551e4dbd57efd6f22ba2b6dad5f02a6473367a28223452a824",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "A solo CPA firm offering CFO-level services, payroll, HR, bookkeeping, SBA support, and IRS resolution under one roof \u2014 managing that breadth manually almost certainly means context-switching overhead and repetitive administrative work crowding out billable advisory time.",
@@ -102,10 +102,10 @@
       "source_id": "REC-accounting-46dd252e466c",
       "source_file": "data/accounting.json",
       "source_hash": "46dd252e466c138ae83295f00b3dc0ccdd6b81a73bb4e71027849a580babfc39",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "A niche CPA firm serving doctors and therapists, where every new client goes through a structured 7-step onboarding process \u2014 manually managing document collection, proposal delivery, and client communication across that pipeline is a direct time leak that grows with every new engagement.",
@@ -118,10 +118,10 @@
       "source_id": "REC-accounting-e2bbfcd769be",
       "source_file": "data/accounting.json",
       "source_hash": "e2bbfcd769beadbe54c9e28be635efc54511c40b44ab52da525769b0b99fff46",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "A 25-year-old firm with two offices across two states and 11 staff \u2014 coordinating tax work across Illinois and Colorado locations with a team of that size almost certainly means manual internal handoffs, inconsistent process documentation, and cross-office communication overhead.",
@@ -134,10 +134,10 @@
       "source_id": "REC-accounting-90324d95b2e3",
       "source_file": "data/accounting.json",
       "source_hash": "90324d95b2e35d6ddbde4e791bfadb171aa0a3562642c0cb18f3bdffa71ef59e",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "A 50-year-old regional CPA firm that has grown through repeated acquisitions and now runs four offices across West Michigan \u2014 managing consistent workflows, client handoffs, and internal processes across that many locations is an operational coordination problem that scales with every acquisition.",
@@ -150,10 +150,10 @@
       "source_id": "REC-accounting-ef756d4b948e",
       "source_file": "data/accounting.json",
       "source_hash": "ef756d4b948e09edd3ea8dc863b5b2064fe32d11e47ebda2e95986297d45ec9d",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "A remote-first accounting firm with 30+ staff serving government contractors, nonprofits, and small businesses, with a published 24-hour email response guarantee \u2014 managing that SLA manually across a distributed team and multiple client types is a direct operational cost that grows with headcount.",
@@ -166,10 +166,10 @@
       "source_id": "REC-accounting-82926166d2ab",
       "source_file": "data/accounting.json",
       "source_hash": "82926166d2abd837d21d801606a34adaef9db4ac1edb331247f96bb3ec940287",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "One of the largest and oldest CPA firms in Augusta, with two offices across Georgia and South Carolina \u2014 managing tax, audit, CFO services, and estate planning across locations with a team that has grown through multiple mergers means coordination overhead and manual workflow management at scale.",
@@ -182,10 +182,10 @@
       "source_id": "REC-accounting-801010b4b337",
       "source_file": "data/accounting.json",
       "source_hash": "801010b4b3375b3908360c439ebeab0f0405045d21a4a9ff2d3e21293131a5c9",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "validation",
       "labels": {
         "pain_point": "A multi-office CPA firm (Pennsylvania and Florida) with strong client retention across construction, real estate, entertainment, and wholesale distribution \u2014 serving diverse industry verticals manually means context-switching overhead and industry-specific document workflows that don't share a common process layer.",
@@ -198,10 +198,10 @@
       "source_id": "REC-accounting-75786d9f26ea",
       "source_file": "data/accounting.json",
       "source_hash": "75786d9f26ea7aa0f7a7d9e75362b849cf56530fdc19ded325767e6f2504d7e8",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "validation",
       "labels": {
         "pain_point": "Karen oversees Cray Kaiser's entire tax division for a 50-year-old Chicago-area firm focused on family-owned businesses \u2014 managing year-end cleanup, software optimization, internal controls review, and 1099 threshold compliance simultaneously across a multi-state client base is a manual coordination problem she publicly acknowledged on LinkedIn.",
@@ -214,10 +214,10 @@
       "source_id": "REC-accounting-d9e5a46c01d4",
       "source_file": "data/accounting.json",
       "source_hash": "d9e5a46c01d4eb7bbbba3ef8e1a9eb2f712e1728e525c8bd2896d0af8b32ab20",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "test",
       "labels": {
         "pain_point": "A managing partner who personally creates detailed, multi-page tax content for LinkedIn multiple times per month while also running a three-office firm across Arkansas \u2014 the time invested in manual client education and content creation is a direct opportunity cost against billable advisory work.",
@@ -232,8 +232,8 @@
       "source_hash": "0dbc6776d588e93e864e834270c018149f4dd5e5d421a123c79bf78c9d18c053",
       "state": "revised",
       "reviewer": "Diwas",
-      "reviewed_at": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "Translating CRM attribution and multi-channel campaign performance across multiple portfolio companies requires heavy manual reporting consolidation and data reconciliation across disparate ad platforms.",
@@ -248,8 +248,8 @@
       "source_hash": "9198ccd4cb7e577b8307bf86da1d7192d5123c42cd7f65e67041c0ef9d82189d",
       "state": "revised",
       "reviewer": "Diwas",
-      "reviewed_at": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "High-volume creative delivery across video editing and multi-format productions creates repetitive operational bottlenecks in asset intake, client feedback rounds, and project handoffs between creative and account teams.",
@@ -264,8 +264,8 @@
       "source_hash": "c5a312f8dc43b13e8cc47b1ede77063cc01c3f43ba2b537ab15d58969a6e98da",
       "state": "revised",
       "reviewer": "Diwas",
-      "reviewed_at": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "Continuously updating outbound sales playbooks and feedback loops across Clay, Heyreach, and Smartlead every week requires manual parsing of campaign replies and call transcripts.",
@@ -280,8 +280,8 @@
       "source_hash": "d1a1d8047d4ee50f867e0a9b8e1f46feb666a66b2fc3a55d81136bc14d6f077d",
       "state": "revised",
       "reviewer": "Diwas",
-      "reviewed_at": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "Handling completely done-for-you outbound campaigns\u2014from domain warmup and list scraping to manual inbox monitoring and reply triage\u2014creates heavy operational drag as client accounts scale.",
@@ -296,8 +296,8 @@
       "source_hash": "3fa0e864feb072797d887c79502d5394c23a2ac886bedcf2d222ef7b06b80ace",
       "state": "accepted",
       "reviewer": "Diwas",
-      "reviewed_at": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Accepted verbatim by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "Coordinating 16 distinct marketing skill sets across a lean 9-person team requires extensive manual cross-channel reporting and operational workflow tracking to prove ROI.",
@@ -312,8 +312,8 @@
       "source_hash": "5312a5235ca154d4ca6284c265bc81197461af43f58c8681a5d047483b9c5156",
       "state": "revised",
       "reviewer": "Diwas",
-      "reviewed_at": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "Translating complex technical product specs into multi-channel demand assets and mapping them into HubSpot pipeline attribution requires tedious manual data entry and content coordination.",
@@ -328,8 +328,8 @@
       "source_hash": "b93a37252343bec91672d72fa095342cfeef1062a6ba81a3da55ced6ba78f53f",
       "state": "revised",
       "reviewer": "Diwas",
-      "reviewed_at": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "High-volume homeowner targeting across 38 states and hundreds of ZIP codes creates constant friction when webhooks drop, data enrichment fails, or intent misclassifications require manual intervention.",
@@ -344,8 +344,8 @@
       "source_hash": "9f6c43b4d6c8be7b33bcbadfa49e5a007b8f4ccf89e675723349c1e68caeb8f7",
       "state": "revised",
       "reviewer": "Diwas",
-      "reviewed_at": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "Scaling LinkedIn outbound and comment-to-DM funnels across multiple client accounts often breaks down due to manual sheet updates, profile scraping limits, and human-dependent DM triage.",
@@ -358,10 +358,10 @@
       "source_id": "REC-marketing-95d57d79c27e",
       "source_file": "data/marketing.json",
       "source_hash": "95d57d79c27efd6c92ee5ef9c1d5a8f3c4cfc3c2df2e588537c9513d5f7f23a4",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "Operating a pure pay-per-meeting model with a 2-day client dispute window forces the operations team into high-friction manual attendance tracking, no-show rescheduling, and dispute reconciliation.",
@@ -374,10 +374,10 @@
       "source_id": "REC-marketing-369442a0ee12",
       "source_file": "data/marketing.json",
       "source_hash": "369442a0ee12d388436961516eed9beb87a693263ab8cf91444b249c8897c187",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "accepted",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Accepted verbatim by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "Syndicating content and processing lead validation across seven distinct publication networks involves massive, repetitive CSV scrubbing, lead deduplication, and intent scoring.",
@@ -390,10 +390,10 @@
       "source_id": "REC-marketing-1ba7b6b0822e",
       "source_file": "data/marketing.json",
       "source_hash": "1ba7b6b0822e5b00cb89b4077d4b549080b0d86e81a0a78f9c996853513d60a8",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "Maintaining a rapid 1.8-day initial creative review across 200+ product launches creates constant operational strain in formatting briefs, gathering client assets, and tracking feedback loops.",
@@ -406,10 +406,10 @@
       "source_id": "REC-marketing-a58db14db17c",
       "source_file": "data/marketing.json",
       "source_hash": "a58db14db17c1d6cc2e00c5b3059d2d7b815e146e8de548d1774d5ddc82db69e",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "Running dedicated telemarketing and inside sales teams across high-volume calling campaigns leads to severe manual leakage in disposition logging, CRM notes synchronization, and appointment verification.",
@@ -422,10 +422,10 @@
       "source_id": "REC-marketing-c2134ff5843f",
       "source_file": "data/marketing.json",
       "source_hash": "c2134ff5843fd9bd06b76221b3d5a181e749d4ffec38216002afc59bc07b248e",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "Offering multi-channel contact discovery, data cleansing, and webinar audience generation requires heavy manual data verification, deduplication, and list formatting across spreadsheets.",
@@ -440,8 +440,8 @@
       "source_hash": "5c15e5ae65d8089b719e2f5be2d9613777e7975d87ce598c8be88cc157442553",
       "state": "revised",
       "reviewer": "Diwas",
-      "reviewed_at": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "Delivering weekly sales-ready leads with engagement scoring across Salesforce and multiple marketing channels requires intensive manual lead nurturing administration and CRM data mapping.",
@@ -454,10 +454,10 @@
       "source_id": "REC-marketing-5f172cf29b50",
       "source_file": "data/marketing.json",
       "source_hash": "5f172cf29b50858bcb8ba1f4a838c22d79df9cc1a331de950d9a95b70d267c8a",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
       "partition": "train",
       "labels": {
         "pain_point": "Scoping, mapping, and validating bespoke financial workflows within a tight 3-week sprint creates a heavy manual burden on technical discovery and workflow documentation.",
@@ -470,10 +470,10 @@
       "source_id": "REC-marketing-302611272881",
       "source_file": "data/marketing.json",
       "source_hash": "302611272881adc7a73675e536e7cffd68709ae53a6457f14a297e5b22578104",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "rejected",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Disqualified lead during human review",
       "partition": "train",
       "labels": {
         "pain_point": "Manually tracking and re-engaging paused 'not now' pipeline across disparate CRM fields and watching for external job or funding change triggers creates a massive operational backlog.",
@@ -486,10 +486,10 @@
       "source_id": "REC-marketing-eb2791edaa66",
       "source_file": "data/marketing.json",
       "source_hash": "eb2791edaa66ef6fce8fd37fe7841cdad81478e14dc51f36e948485821588200",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
+      "state": "rejected",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Disqualified lead during human review",
       "partition": "train",
       "labels": {
         "pain_point": "Running high-volume outbound alongside a 201k-subscriber newsletter creates severe operational drag in synchronizing intent data, managing domain deliverability, and routing sales conversations.",
@@ -502,11 +502,11 @@
       "source_id": "REC-marketing-eb1fae4f310f",
       "source_file": "data/marketing.json",
       "source_hash": "eb1fae4f310fd70867161d03a8c226826b6ef697feed8e366d72da0d5dd901b6",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
-      "partition": "train",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
+      "partition": "validation",
       "labels": {
         "pain_point": "Aggregating store performance, organic keyword rankings, and paid UA spend across multiple developer consoles and ad platforms creates tedious manual data reconciliation for client reporting.",
         "personalization_angle": "Founder of ShyftUp and creator of Metrikal, bridging App Store Optimization and Apple Search Ads for major apps like SoFi, Acorns, and Square.",
@@ -518,11 +518,11 @@
       "source_id": "REC-marketing-3e2c6086d6c1",
       "source_file": "data/marketing.json",
       "source_hash": "3e2c6086d6c10cdc1bff5a43e8fbda505f4e7d6354a07c0e2514fc7075ee268a",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
-      "partition": "train",
+      "state": "accepted",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Accepted verbatim by Diwas",
+      "partition": "validation",
       "labels": {
         "pain_point": "Embedding fractional marketing teams inside client organizations creates severe administrative drag in cross-account task tracking and client reporting.",
         "personalization_angle": "Founder & CEO of 1 Bold Step, teaching revenue-first marketing grounded in Goldratt's Theory of Constraints and deploying fractional marketing teams for B2B manufacturers.",
@@ -534,11 +534,11 @@
       "source_id": "REC-marketing-43d0bcd0edda",
       "source_file": "data/marketing.json",
       "source_hash": "43d0bcd0edda040d45d7110fe855b321018ec311c79d37041cbf388ff9f3eb48",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
-      "partition": "train",
+      "state": "accepted",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Accepted verbatim by Diwas",
+      "partition": "validation",
       "labels": {
         "pain_point": "Helping business owners pinpoint and automate single-workflow constraints requires repetitive manual discovery, workflow mapping, and tool integration before any AI agent can be deployed.",
         "personalization_angle": "Built and exited Ashworth Strategy and now runs FlowSystem AI, advocating for Goldratt's Theory of Constraints and automating single repeating workflows rather than full-company overhauls.",
@@ -550,11 +550,11 @@
       "source_id": "REC-marketing-82775950a226",
       "source_file": "data/marketing.json",
       "source_hash": "82775950a226529b2edd7f33deef0c2f729cd106ec080f9ad4a02fd409a05391",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
-      "partition": "train",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
+      "partition": "validation",
       "labels": {
         "pain_point": "Custom-building and onboarding clients onto HighLevel CRMs and automations requires extensive manual pipeline testing, webhook configuration, and repetitive troubleshooting during deployment.",
         "personalization_angle": "Founder of Active Solutions, featured by HighLevel for building done-for-you CRM systems, project management workspaces, and business automations for service operators.",
@@ -566,11 +566,11 @@
       "source_id": "REC-marketing-a15678ce6959",
       "source_file": "data/marketing.json",
       "source_hash": "a15678ce6959225ca92dc778aa8bb80178c3a43c93cf7a949155029b4529e67a",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
-      "partition": "train",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
+      "partition": "validation",
       "labels": {
         "pain_point": "Managing full-funnel accounts for enterprise brands across creative, paid media, and UX creates a massive administrative tax in cross-department status tracking and client reporting.",
         "personalization_angle": "Owner & CEO of Modern Climate in Minneapolis, leading multi-discipline agency teams serving major enterprise brands like Family Dollar, 3M, and Medtronic.",
@@ -582,11 +582,11 @@
       "source_id": "REC-marketing-68dfb9162f1f",
       "source_file": "data/marketing.json",
       "source_hash": "68dfb9162f1ffed967015244f038b5a368bd07a7a0cf59d473c056e7c98e1a4a",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
-      "partition": "train",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
+      "partition": "validation",
       "labels": {
         "pain_point": "Managing day-to-day operations for a done-for-you CRM and automation agency means constantly handling edge-case client troubleshooting, onboarding delays, and manual project handoffs.",
         "personalization_angle": "Context too thin \u2014 website copy only. COO & Co-Founder of Active Solutions, which builds done-for-you CRM systems, project management workspaces, and workflow automations.",
@@ -598,11 +598,11 @@
       "source_id": "REC-marketing-9cf6c8644312",
       "source_file": "data/marketing.json",
       "source_hash": "9cf6c8644312efbc973a53b8d95b7116b0b7504e762bc32e6db42b697eb4b3b4",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
-      "partition": "train",
+      "state": "accepted",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Accepted verbatim by Diwas",
+      "partition": "validation",
       "labels": {
         "pain_point": "Running field marketing and in-person sales campaigns creates significant operational delay when paper or manual field logs must be reconciled with CRM records and performance metrics.",
         "personalization_angle": "Founder of Altitude Promotions with 300+ sales reps trained, actively emphasizing reducing CAC in field marketing by leveraging CRM and field data.",
@@ -614,11 +614,11 @@
       "source_id": "REC-marketing-bd6f3e940e35",
       "source_file": "data/marketing.json",
       "source_hash": "bd6f3e940e356fd86b904d7dff72331b6680e72f62dc7d98e7fa4a7a3d30a3bd",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
-      "partition": "train",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
+      "partition": "validation",
       "labels": {
         "pain_point": "Delivering multi-channel outbound, AEO/GEO citations, and founder LinkedIn content across dozens of international client accounts requires massive manual coordination in content scheduling, intent monitoring, and reply triage.",
         "personalization_angle": "Co-founder of Growleads.io delivering multi-channel outbound, AEO, and LinkedIn authority systems, with 1,200+ meetings booked across 9+ countries.",
@@ -630,11 +630,11 @@
       "source_id": "REC-marketing-1b77896e9ad0",
       "source_file": "data/marketing.json",
       "source_hash": "1b77896e9ad09b85c130b8c0f754a9649bef3f0a5e67a1db9de1424ea6ba8205",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
-      "partition": "train",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
+      "partition": "test",
       "labels": {
         "pain_point": "Managing ad spend and lead generation across dozens of automotive dealerships and parts brands requires heavy manual ad optimization, multi-location inventory feed syncing, and daily CAC reconciliation.",
         "personalization_angle": "Founder of IOI Solutions specialized exclusively in automotive marketing for 50+ brands, recently hosting marketing audit sessions at SEMA in Las Vegas.",
@@ -646,11 +646,11 @@
       "source_id": "REC-marketing-d0bb6588368d",
       "source_file": "data/marketing.json",
       "source_hash": "d0bb6588368d8a8de46641e50581c21b18b414695e87f3b7d45d415d0e5b0989",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
-      "partition": "train",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
+      "partition": "test",
       "labels": {
         "pain_point": "Custom-building and maintaining individual Google Data Studio dashboards and database integrations for dozens of marketing clients creates constant maintenance tickets and manual ETL troubleshooting.",
         "personalization_angle": "CTO and EVP of Synapse with 16+ years overseeing interactive architecture, database integrations, and client reporting systems like custom Data Studio dashboards.",
@@ -662,11 +662,11 @@
       "source_id": "REC-marketing-045f75d5af39",
       "source_file": "data/marketing.json",
       "source_hash": "045f75d5af39a76b9a60bc7cf4300e30c04660c7b6084243266fddfa6c2e3daa",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
-      "partition": "train",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
+      "partition": "test",
       "labels": {
         "pain_point": "As buyer journeys shift to self-serve and digital qualification, managing multi-channel lead routing and attribution across 90,000+ lifetime campaigns requires heavy manual coordination.",
         "personalization_angle": "Founder & CEO of Synapse (recently named to Inc. 5000 for the second time), sharing that 62% of B2B buyers prefer self-serve experiences and frictionless discovery over rep-heavy pitching.",
@@ -678,11 +678,11 @@
       "source_id": "REC-marketing-ff0f4c2820ce",
       "source_file": "data/marketing.json",
       "source_hash": "ff0f4c2820ceac6b3af5d3451d95929196060998def866b57f6e4543dc89fec3",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
-      "partition": "train",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
+      "partition": "test",
       "labels": {
         "pain_point": "Managing Google Business Profile verifications, suspensions, and hyper-local citation updates across 750+ home service accounts requires enormous manual coordination and administrative triage.",
         "personalization_angle": "Co-founder & CRO of Stryker Digital, helping 750+ home service businesses dominate the Google Maps top 3 with 45 in-house specialists and direct Slack support.",
@@ -694,11 +694,11 @@
       "source_id": "REC-marketing-144d263940f9",
       "source_file": "data/marketing.json",
       "source_hash": "144d263940f90bfb515c074faca3a06faea9d2485c812d84473ea0e8f43c4910",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
-      "partition": "train",
+      "state": "accepted",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Accepted verbatim by Diwas",
+      "partition": "test",
       "labels": {
         "pain_point": "Managing paid advertising across strict, evolving cannabis compliance rules across 18 states requires constant manual creative review, ad rejection appeals, and compliance verification.",
         "personalization_angle": "VP of Paid Media at CHAMP Digital and Cannabis Creative Group, managing compliant Google, Meta, and LinkedIn ad campaigns across 18 states for 100+ cannabis businesses.",
@@ -710,11 +710,11 @@
       "source_id": "REC-marketing-fe595ec65810",
       "source_file": "data/marketing.json",
       "source_hash": "fe595ec658109523db756cd146f5afece550762c0be892330035b6be3d0e66d5",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
-      "partition": "train",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
+      "partition": "test",
       "labels": {
         "pain_point": "Running dual agency brands (CHAMP Digital and Cannabis Creative Group) across web design, SEO, and paid media creates complex cross-team resource allocation and operational silos.",
         "personalization_angle": "Founder & CEO of CHAMP Digital for 17 years and Co-Founder of Cannabis Creative Group, leading full-service digital marketing across web design, SEO, and paid media.",
@@ -726,11 +726,11 @@
       "source_id": "REC-marketing-0b2a8b318911",
       "source_file": "data/marketing.json",
       "source_hash": "0b2a8b31891196e433701203436491208e933f8e4f6d6902ebca8fe51bac0144",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
-      "partition": "train",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
+      "partition": "test",
       "labels": {
         "pain_point": "Managing store revamps, product catalog uploads, and multi-channel marketing for hundreds of D2C clients creates repetitive manual bottlenecks in product description generation, image asset organization, and listing optimization.",
         "personalization_angle": "Founder & CEO of Conzia, helping over 1,000 D2C brands scale on Shopify and Amazon, and actively teaching frameworks for leveraging AI to streamline ecommerce revenue.",
@@ -742,11 +742,11 @@
       "source_id": "REC-marketing-9166173a5b23",
       "source_file": "data/marketing.json",
       "source_hash": "9166173a5b239ad68058c2cddec4b9c35a1f8b2f2b848d83b911461950049be4",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
-      "partition": "train",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
+      "partition": "test",
       "labels": {
         "pain_point": "Unifying multi-channel execution across Marketplaces, Affiliate, and Paid Media for $20M-$200M PE-backed brands creates severe manual overhead in cross-channel attribution and diligence reporting.",
         "personalization_angle": "Context too thin \u2014 website copy only. EAccountable is a 25-year performance agency managing connected ecosystems across Marketplaces, Affiliate, Paid Media, and operational analytics for $20M-$200M brands.",
@@ -758,11 +758,11 @@
       "source_id": "REC-marketing-597a44abdc14",
       "source_file": "data/marketing.json",
       "source_hash": "597a44abdc1408a09f3099f588b52e720276df7157cb690165b8ef59c3ae15ea",
-      "state": "needs-review",
-      "reviewer": null,
-      "reviewed_at": null,
-      "notes": "Enqueued for Diwas review",
-      "partition": "train",
+      "state": "revised",
+      "reviewer": "Diwas",
+      "reviewed_at": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas",
+      "partition": "test",
       "labels": {
         "pain_point": "Delivering done-for-you Meta ads, localized video ad editing, and appointment tracking for 500+ roofing companies across 40 states leads to major administrative drag in client asset collection and local ad campaign deployment.",
         "personalization_angle": "Visionary at Contractor Dynamics, serving 500+ roofing companies with $10M+ in ad spend managed and currently launching an AI-hybrid marketing training program.",
@@ -1370,7 +1370,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "notes": "Enqueued for Diwas review",
-      "partition": "validation",
+      "partition": "train",
       "labels": {
         "pain_point": "Reviewing ad creative disclaimers and maintaining state-by-state financial compliance archives for active campaigns.",
         "personalization_angle": "PulsePoint scaled customer acquisition for zero-fee banking and micro-investing mobile apps.",
@@ -1386,7 +1386,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "notes": "Enqueued for Diwas review",
-      "partition": "validation",
+      "partition": "train",
       "labels": {
         "pain_point": "Managing daily LinkedIn connection request limits and warm-up pacing across 50+ client executive profiles.",
         "personalization_angle": "ScaleEngine generates qualified sales meetings for boutique management consulting firms.",
@@ -1402,7 +1402,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "notes": "Enqueued for Diwas review",
-      "partition": "validation",
+      "partition": "train",
       "labels": {
         "pain_point": "Managing distributed render farm queues and tracking client asset dependencies across Cinema 4D project archives.",
         "personalization_angle": "Prism Creative created the flagship 3D hardware reveal animation for a luxury audio manufacturer.",
@@ -1418,7 +1418,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "notes": "Enqueued for Diwas review",
-      "partition": "validation",
+      "partition": "train",
       "labels": {
         "pain_point": "Auditing target company reported customer acquisition costs for blended organic-paid attribution distortions.",
         "personalization_angle": "AuditGrowth has advised on \\$1.2B in B2B software acquisitions, identifying hidden CAC inflation.",
@@ -1434,7 +1434,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "notes": "Enqueued for Diwas review",
-      "partition": "validation",
+      "partition": "train",
       "labels": {
         "pain_point": "Tracking lead drop-off across multi-step qualification survey funnels and testing form field order impact on completion rates.",
         "personalization_angle": "OptiFunnel builds intake pipelines generating \\$2M+ monthly for medical aesthetic and elective surgery clinics.",
@@ -1450,7 +1450,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "notes": "Enqueued for Diwas review",
-      "partition": "validation",
+      "partition": "train",
       "labels": {
         "pain_point": "Aligning product roadmap releases with sales enablement deck updates and SDR battlecard training.",
         "personalization_angle": "Tobias advised six venture-backed software startups from initial Seed traction to successful Series B rounds.",
@@ -1466,7 +1466,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "notes": "Enqueued for Diwas review",
-      "partition": "validation",
+      "partition": "train",
       "labels": {
         "pain_point": "Monitoring journalist beat changes and tracking live coverage syndicated across national news affiliates.",
         "personalization_angle": "OrganicEngine secured earned media features for tech clients across Forbes, TechCrunch, and Bloomberg.",
@@ -1482,7 +1482,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "notes": "Enqueued for Diwas review",
-      "partition": "validation",
+      "partition": "train",
       "labels": {
         "pain_point": "Targeting senior enterprise C-suite executives on LinkedIn without burning high CPC budgets on entry-level employees.",
         "personalization_angle": "CoreDigital delivers \\$100k+ consulting client retainers via specialized thought-leadership campaigns.",
@@ -1498,7 +1498,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "notes": "Enqueued for Diwas review",
-      "partition": "test",
+      "partition": "train",
       "labels": {
         "pain_point": "Managing client ticket status handoffs between partner agency account managers and backend fulfillment teams.",
         "personalization_angle": "Streamline handles white-label media fulfillment for over 45 partner marketing agencies across North America.",
@@ -1514,7 +1514,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "notes": "Enqueued for Diwas review",
-      "partition": "test",
+      "partition": "train",
       "labels": {
         "pain_point": "Extracting key audio highlights and generating synchronized video captions across multi-speaker interview episodes.",
         "personalization_angle": "EchoMedia produces top 1% technology podcasts for SaaS enterprise brands.",
@@ -1530,7 +1530,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "notes": "Enqueued for Diwas review",
-      "partition": "test",
+      "partition": "train",
       "labels": {
         "pain_point": "Passing dynamic quiz response answers and custom diagnostic scores into ESP subscriber profiles.",
         "personalization_angle": "ConversionPulse engineered quiz funnels generating 250,000+ qualified leads for financial advisory firms.",
@@ -1546,7 +1546,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "notes": "Enqueued for Diwas review",
-      "partition": "test",
+      "partition": "train",
       "labels": {
         "pain_point": "Synchronizing USPS postal delivery tracking scans with digital retargeting display ads to hit recipients on package arrival day.",
         "personalization_angle": "PrecisionB2B drives 34% response rates on high-value corporate gift outreach for cyber software.",
@@ -1562,7 +1562,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "notes": "Enqueued for Diwas review",
-      "partition": "test",
+      "partition": "train",
       "labels": {
         "pain_point": "Synthesizing marketing budget allocations and runway impact across multiple client fractional leadership engagements.",
         "personalization_angle": "Elliott has served as fractional marketing leader for 12 bootstrapped B2B SaaS firms reaching \\$5M ARR.",
@@ -1578,7 +1578,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "notes": "Enqueued for Diwas review",
-      "partition": "test",
+      "partition": "train",
       "labels": {
         "pain_point": "Detecting click farms and datacenter IP traffic anomalies across programmatic open exchange placements.",
         "personalization_angle": "Stefan developed proprietary bot-filtering heuristics saving advertisers \\$3M in clawbacks annually.",
@@ -1594,7 +1594,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "notes": "Enqueued for Diwas review",
-      "partition": "test",
+      "partition": "train",
       "labels": {
         "pain_point": "Managing silent webhook timeout failures and broken JSON payloads during high-traffic lead form spikes.",
         "personalization_angle": "Leona specializes in fault-tolerant automation architecture handling 500,000+ monthly CRM webhook executions.",
@@ -1610,7 +1610,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "notes": "Enqueued for Diwas review",
-      "partition": "test",
+      "partition": "train",
       "labels": {
         "pain_point": "Monitoring negative review sentiment alerts across 200+ Google Business Profiles and routing escalated responses.",
         "personalization_angle": "AlphaRank generated over 50,000 verified 5-star customer reviews for dental and home service franchises.",
@@ -1626,7 +1626,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "notes": "Enqueued for Diwas review",
-      "partition": "test",
+      "partition": "train",
       "labels": {
         "pain_point": "Tracking competitor brand keyword bid price fluctuations and Quality Score decay on competitive conquesting ad groups.",
         "personalization_angle": "Summit Demand captures bottom-of-funnel software buyers searching for alternatives to market incumbents.",
@@ -1639,393 +1639,393 @@
     {
       "source_id": "REC-accounting-262b219d8781",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-accounting-0ea0167d3077",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-accounting-0a31263c8080",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-accounting-65b5c86b4ce5",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-accounting-5f2e68099605",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-accounting-50ebb4302e52",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-accounting-46dd252e466c",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-accounting-e2bbfcd769be",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-accounting-90324d95b2e3",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-accounting-ef756d4b948e",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-accounting-82926166d2ab",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-accounting-801010b4b337",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-accounting-75786d9f26ea",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-accounting-d9e5a46c01d4",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-0dbc6776d588",
       "from_state": "proposed",
       "to_state": "revised",
       "reviewer": "Diwas",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)"
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-9198ccd4cb7e",
       "from_state": "proposed",
       "to_state": "revised",
       "reviewer": "Diwas",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)"
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-c5a312f8dc43",
       "from_state": "proposed",
       "to_state": "revised",
       "reviewer": "Diwas",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)"
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-d1a1d8047d4e",
       "from_state": "proposed",
       "to_state": "revised",
       "reviewer": "Diwas",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)"
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-3fa0e864feb0",
       "from_state": "proposed",
       "to_state": "accepted",
       "reviewer": "Diwas",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)"
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Accepted verbatim by Diwas"
     },
     {
       "source_id": "REC-marketing-5312a5235ca1",
       "from_state": "proposed",
       "to_state": "revised",
       "reviewer": "Diwas",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)"
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-b93a37252343",
       "from_state": "proposed",
       "to_state": "revised",
       "reviewer": "Diwas",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)"
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-9f6c43b4d6c8",
       "from_state": "proposed",
       "to_state": "revised",
       "reviewer": "Diwas",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)"
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-95d57d79c27e",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-369442a0ee12",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "accepted",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Accepted verbatim by Diwas"
     },
     {
       "source_id": "REC-marketing-1ba7b6b0822e",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-a58db14db17c",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-c2134ff5843f",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-5c15e5ae65d8",
       "from_state": "proposed",
       "to_state": "revised",
       "reviewer": "Diwas",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Reviewed by Diwas (custom body & hook preserved)"
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-5f172cf29b50",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-302611272881",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "rejected",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Disqualified lead during human review"
     },
     {
       "source_id": "REC-marketing-eb2791edaa66",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "rejected",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Disqualified lead during human review"
     },
     {
       "source_id": "REC-marketing-eb1fae4f310f",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-3e2c6086d6c1",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "accepted",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Accepted verbatim by Diwas"
     },
     {
       "source_id": "REC-marketing-43d0bcd0edda",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "accepted",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Accepted verbatim by Diwas"
     },
     {
       "source_id": "REC-marketing-82775950a226",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-a15678ce6959",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-68dfb9162f1f",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-9cf6c8644312",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "accepted",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Accepted verbatim by Diwas"
     },
     {
       "source_id": "REC-marketing-bd6f3e940e35",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-1b77896e9ad0",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-d0bb6588368d",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-045f75d5af39",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-ff0f4c2820ce",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-144d263940f9",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "accepted",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Accepted verbatim by Diwas"
     },
     {
       "source_id": "REC-marketing-fe595ec65810",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-0b2a8b318911",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-9166173a5b23",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-597a44abdc14",
       "from_state": "proposed",
-      "to_state": "needs-review",
-      "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
-      "notes": "Enqueued for Diwas review"
+      "to_state": "revised",
+      "reviewer": "Diwas",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
+      "notes": "Reviewed and revised by Diwas"
     },
     {
       "source_id": "REC-marketing-23bc5a90f8ed",
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2033,7 +2033,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2041,7 +2041,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2049,7 +2049,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2057,7 +2057,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2065,7 +2065,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2073,7 +2073,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2081,7 +2081,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2089,7 +2089,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2097,7 +2097,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2105,7 +2105,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2113,7 +2113,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2121,7 +2121,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2129,7 +2129,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2137,7 +2137,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2145,7 +2145,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2153,7 +2153,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2161,7 +2161,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2169,7 +2169,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2177,7 +2177,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2185,7 +2185,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2193,7 +2193,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2201,7 +2201,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2209,7 +2209,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2217,7 +2217,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2225,7 +2225,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2233,7 +2233,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2241,7 +2241,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2249,7 +2249,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2257,7 +2257,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2265,7 +2265,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2273,7 +2273,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2281,7 +2281,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2289,7 +2289,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2297,7 +2297,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2305,7 +2305,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2313,7 +2313,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2321,7 +2321,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2329,7 +2329,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2337,7 +2337,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2345,7 +2345,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2353,7 +2353,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2361,7 +2361,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2369,7 +2369,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2377,7 +2377,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2385,7 +2385,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2393,7 +2393,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2401,7 +2401,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2409,7 +2409,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2417,7 +2417,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2425,7 +2425,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2433,7 +2433,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2441,7 +2441,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     },
     {
@@ -2449,7 +2449,7 @@
       "from_state": "proposed",
       "to_state": "needs-review",
       "reviewer": "system",
-      "timestamp": "2026-11-13T10:12:50.440414+00:00",
+      "timestamp": "2026-11-13T11:25:32.096644+00:00",
       "notes": "Enqueued for Diwas review"
     }
   ]
